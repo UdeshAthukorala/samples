@@ -37,6 +37,15 @@
       "desc": "An Express server that signs users in with @thunderid/express and protects its routes."
     },
     {
+      "path": "quickstarts/express-bff",
+      "alt": "ThunderID Express BFF Quickstart",
+      "badge": "QUICKSTART",
+      "logo": "express",
+      "title": "Express <accent>BFF</accent>",
+      "accent": "#FFFFFF",
+      "desc": "A Backend for Frontend for the React quickstart. It keeps tokens on the server with @thunderid/express and handles back-channel logout."
+    },
+    {
       "path": "quickstarts/flutter",
       "alt": "ThunderID Flutter Quickstart",
       "badge": "QUICKSTART",

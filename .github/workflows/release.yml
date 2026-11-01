@@ -44,6 +44,12 @@ on:
         type: boolean
         default: false
 
+      sample_quickstarts_express_bff:
+        description: 'quickstarts/express-bff'
+        required: false
+        type: boolean
+        default: false
+
       sample_quickstarts_flutter:
         description: 'quickstarts/flutter'
         required: false
@@ -131,6 +137,7 @@ jobs:
           sample_quickstarts_android: ${{ github.event.inputs.sample_quickstarts_android }}
           sample_quickstarts_browser: ${{ github.event.inputs.sample_quickstarts_browser }}
           sample_quickstarts_express: ${{ github.event.inputs.sample_quickstarts_express }}
+          sample_quickstarts_express_bff: ${{ github.event.inputs.sample_quickstarts_express_bff }}
           sample_quickstarts_flutter: ${{ github.event.inputs.sample_quickstarts_flutter }}
           sample_quickstarts_ios: ${{ github.event.inputs.sample_quickstarts_ios }}
           sample_quickstarts_nextjs: ${{ github.event.inputs.sample_quickstarts_nextjs }}
@@ -151,6 +158,7 @@ jobs:
           add sample_quickstarts_android '{"path":"quickstarts/android","emoji":"🤖","title":"ThunderID Android Quickstart Sample"}'
           add sample_quickstarts_browser '{"path":"quickstarts/browser","emoji":"🌐","title":"ThunderID Browser Quickstart Sample"}'
           add sample_quickstarts_express '{"path":"quickstarts/express","emoji":"🚂","title":"ThunderID Express Quickstart Sample"}'
+          add sample_quickstarts_express_bff '{"path":"quickstarts/express-bff","emoji":"🛡️","title":"ThunderID Express BFF Quickstart Sample"}'
           add sample_quickstarts_flutter '{"path":"quickstarts/flutter","emoji":"🦋","title":"ThunderID Flutter Quickstart Sample"}'
           add sample_quickstarts_ios '{"path":"quickstarts/ios","emoji":"🍎","title":"ThunderID iOS Quickstart Sample"}'
           add sample_quickstarts_nextjs '{"path":"quickstarts/nextjs","emoji":"▲","title":"ThunderID Next.js Quickstart Sample"}'

@@ -30,6 +30,18 @@ A minimal React + Vite application demonstrating ThunderID authentication with O
 
 The app will be available at `http://localhost:5173`.
 
+## Sign in through a BFF
+
+By default the app signs in from the browser and keeps its tokens there. To keep them on a server
+instead, run it against the [Express BFF](../express-bff), which holds the tokens behind an
+`HttpOnly` cookie and handles back-channel logout:
+
+1. Set up and start the BFF as its README describes.
+2. Set `VITE_THUNDERID_BFF=true` in this app's `.env`. The client ID and base URL are then not
+   needed, since the BFF has them.
+3. Run `npm run dev`. The dev server forwards `/api/auth` to the BFF at `http://localhost:3001`,
+   or at `BFF_URL` when set.
+
 ## Docs
 
 Full SDK reference: [thunderid.dev/docs](https://thunderid.dev/docs)
